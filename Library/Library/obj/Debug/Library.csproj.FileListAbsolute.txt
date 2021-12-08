@@ -1,0 +1,10 @@
+C:\Users\fuadm\source\repos\Library\Library\bin\Debug\Library.exe.config
+C:\Users\fuadm\source\repos\Library\Library\bin\Debug\Library.exe
+C:\Users\fuadm\source\repos\Library\Library\bin\Debug\Library.pdb
+C:\Users\fuadm\source\repos\Library\Library\obj\Debug\Library.csproj.AssemblyReference.cache
+C:\Users\fuadm\source\repos\Library\Library\obj\Debug\Library.Form1.resources
+C:\Users\fuadm\source\repos\Library\Library\obj\Debug\Library.Properties.Resources.resources
+C:\Users\fuadm\source\repos\Library\Library\obj\Debug\Library.csproj.GenerateResource.cache
+C:\Users\fuadm\source\repos\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\source\repos\Library\Library\obj\Debug\Library.exe
+C:\Users\fuadm\source\repos\Library\Library\obj\Debug\Library.pdb
