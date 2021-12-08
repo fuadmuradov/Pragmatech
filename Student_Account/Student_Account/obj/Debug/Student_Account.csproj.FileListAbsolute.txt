@@ -1,0 +1,7 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Student_Account\Student_Account\bin\Debug\Student_Account.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Student_Account\Student_Account\bin\Debug\Student_Account.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Student_Account\Student_Account\bin\Debug\Student_Account.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Student_Account\Student_Account\obj\Debug\Student_Account.csproj.AssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Student_Account\Student_Account\obj\Debug\Student_Account.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Student_Account\Student_Account\obj\Debug\Student_Account.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Student_Account\Student_Account\obj\Debug\Student_Account.pdb
