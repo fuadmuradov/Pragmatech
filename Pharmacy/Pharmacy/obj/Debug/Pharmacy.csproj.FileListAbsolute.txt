@@ -1,0 +1,7 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Pharmacy_Lesson_10\Pharmacy\Pharmacy\bin\Debug\Pharmacy.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Pharmacy_Lesson_10\Pharmacy\Pharmacy\bin\Debug\Pharmacy.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Pharmacy_Lesson_10\Pharmacy\Pharmacy\bin\Debug\Pharmacy.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Pharmacy_Lesson_10\Pharmacy\Pharmacy\obj\Debug\Pharmacy.csproj.AssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Pharmacy_Lesson_10\Pharmacy\Pharmacy\obj\Debug\Pharmacy.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Pharmacy_Lesson_10\Pharmacy\Pharmacy\obj\Debug\Pharmacy.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Pharmacy_Lesson_10\Pharmacy\Pharmacy\obj\Debug\Pharmacy.pdb
