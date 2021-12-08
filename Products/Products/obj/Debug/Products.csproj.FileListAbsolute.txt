@@ -1,0 +1,7 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Products\Products\bin\Debug\Products.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Products\Products\bin\Debug\Products.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Products\Products\bin\Debug\Products.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Products\Products\obj\Debug\Products.csproj.AssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Products\Products\obj\Debug\Products.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Products\Products\obj\Debug\Products.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Products\Products\obj\Debug\Products.pdb
