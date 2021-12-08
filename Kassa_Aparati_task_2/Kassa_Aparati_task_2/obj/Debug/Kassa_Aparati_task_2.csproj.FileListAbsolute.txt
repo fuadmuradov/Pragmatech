@@ -1,0 +1,7 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_13\Kassa_Aparati_task_2\Kassa_Aparati_task_2\bin\Debug\Kassa_Aparati_task_2.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_13\Kassa_Aparati_task_2\Kassa_Aparati_task_2\bin\Debug\Kassa_Aparati_task_2.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_13\Kassa_Aparati_task_2\Kassa_Aparati_task_2\bin\Debug\Kassa_Aparati_task_2.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_13\Kassa_Aparati_task_2\Kassa_Aparati_task_2\obj\Debug\Kassa_Aparati_task_2.csproj.AssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_13\Kassa_Aparati_task_2\Kassa_Aparati_task_2\obj\Debug\Kassa_Aparati_task_2.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_13\Kassa_Aparati_task_2\Kassa_Aparati_task_2\obj\Debug\Kassa_Aparati_task_2.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_13\Kassa_Aparati_task_2\Kassa_Aparati_task_2\obj\Debug\Kassa_Aparati_task_2.pdb
