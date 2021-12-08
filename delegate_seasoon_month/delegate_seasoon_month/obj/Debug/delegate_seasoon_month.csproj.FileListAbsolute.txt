@@ -1,0 +1,7 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_12\delegate_seasoon_month\delegate_seasoon_month\bin\Debug\delegate_seasoon_month.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_12\delegate_seasoon_month\delegate_seasoon_month\bin\Debug\delegate_seasoon_month.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_12\delegate_seasoon_month\delegate_seasoon_month\bin\Debug\delegate_seasoon_month.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_12\delegate_seasoon_month\delegate_seasoon_month\obj\Debug\delegate_seasoon_month.csproj.AssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_12\delegate_seasoon_month\delegate_seasoon_month\obj\Debug\delegate_seasoon_month.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_12\delegate_seasoon_month\delegate_seasoon_month\obj\Debug\delegate_seasoon_month.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_12\delegate_seasoon_month\delegate_seasoon_month\obj\Debug\delegate_seasoon_month.pdb
