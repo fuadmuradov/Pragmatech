@@ -1,0 +1,6 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson 3\student_GetBirthDay\student_GetBirthDay\bin\Debug\student_GetBirthDay.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson 3\student_GetBirthDay\student_GetBirthDay\bin\Debug\student_GetBirthDay.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson 3\student_GetBirthDay\student_GetBirthDay\bin\Debug\student_GetBirthDay.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson 3\student_GetBirthDay\student_GetBirthDay\obj\Debug\student_GetBirthDay.csprojAssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson 3\student_GetBirthDay\student_GetBirthDay\obj\Debug\student_GetBirthDay.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson 3\student_GetBirthDay\student_GetBirthDay\obj\Debug\student_GetBirthDay.pdb
