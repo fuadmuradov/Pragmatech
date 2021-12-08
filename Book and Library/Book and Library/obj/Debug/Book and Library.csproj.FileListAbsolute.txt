@@ -1,0 +1,7 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Book and Library\Book and Library\bin\Debug\Book and Library.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Book and Library\Book and Library\bin\Debug\Book and Library.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Book and Library\Book and Library\bin\Debug\Book and Library.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Book and Library\Book and Library\obj\Debug\Book and Library.csproj.AssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Book and Library\Book and Library\obj\Debug\Book and Library.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Book and Library\Book and Library\obj\Debug\Book and Library.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_4\Book and Library\Book and Library\obj\Debug\Book and Library.pdb
