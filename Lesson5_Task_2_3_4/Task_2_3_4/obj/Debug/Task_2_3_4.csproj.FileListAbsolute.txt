@@ -1,0 +1,7 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_5\Task_2_3_4\Task_2_3_4\bin\Debug\Task_2_3_4.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_5\Task_2_3_4\Task_2_3_4\bin\Debug\Task_2_3_4.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_5\Task_2_3_4\Task_2_3_4\bin\Debug\Task_2_3_4.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_5\Task_2_3_4\Task_2_3_4\obj\Debug\Task_2_3_4.csproj.AssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_5\Task_2_3_4\Task_2_3_4\obj\Debug\Task_2_3_4.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_5\Task_2_3_4\Task_2_3_4\obj\Debug\Task_2_3_4.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_5\Task_2_3_4\Task_2_3_4\obj\Debug\Task_2_3_4.pdb
