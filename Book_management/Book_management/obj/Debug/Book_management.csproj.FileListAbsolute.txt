@@ -1,0 +1,6 @@
+C:\Users\fuadm\source\repos\Book_management\Book_management\bin\Debug\Book_management.exe.config
+C:\Users\fuadm\source\repos\Book_management\Book_management\bin\Debug\Book_management.exe
+C:\Users\fuadm\source\repos\Book_management\Book_management\bin\Debug\Book_management.pdb
+C:\Users\fuadm\source\repos\Book_management\Book_management\obj\Debug\Book_management.csprojAssemblyReference.cache
+C:\Users\fuadm\source\repos\Book_management\Book_management\obj\Debug\Book_management.exe
+C:\Users\fuadm\source\repos\Book_management\Book_management\obj\Debug\Book_management.pdb
