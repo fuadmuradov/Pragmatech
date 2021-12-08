@@ -1,0 +1,7 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_6\StudentsAndGroups\StudentsAndGroups\bin\Debug\StudentsAndGroups.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_6\StudentsAndGroups\StudentsAndGroups\bin\Debug\StudentsAndGroups.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_6\StudentsAndGroups\StudentsAndGroups\bin\Debug\StudentsAndGroups.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_6\StudentsAndGroups\StudentsAndGroups\obj\Debug\StudentsAndGroups.csproj.AssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_6\StudentsAndGroups\StudentsAndGroups\obj\Debug\StudentsAndGroups.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_6\StudentsAndGroups\StudentsAndGroups\obj\Debug\StudentsAndGroups.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_6\StudentsAndGroups\StudentsAndGroups\obj\Debug\StudentsAndGroups.pdb
