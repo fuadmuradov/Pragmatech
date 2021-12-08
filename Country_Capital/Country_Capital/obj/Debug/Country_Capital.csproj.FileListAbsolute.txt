@@ -1,0 +1,7 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_5\Country_Capital\Country_Capital\bin\Debug\Country_Capital.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_5\Country_Capital\Country_Capital\bin\Debug\Country_Capital.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_5\Country_Capital\Country_Capital\bin\Debug\Country_Capital.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_5\Country_Capital\Country_Capital\obj\Debug\Country_Capital.csproj.AssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_5\Country_Capital\Country_Capital\obj\Debug\Country_Capital.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_5\Country_Capital\Country_Capital\obj\Debug\Country_Capital.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_5\Country_Capital\Country_Capital\obj\Debug\Country_Capital.pdb
