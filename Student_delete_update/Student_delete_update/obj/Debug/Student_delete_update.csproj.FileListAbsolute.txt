@@ -1,0 +1,10 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_17\Student_delete_update\Student_delete_update\bin\Debug\Student_delete_update.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_17\Student_delete_update\Student_delete_update\bin\Debug\Student_delete_update.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_17\Student_delete_update\Student_delete_update\bin\Debug\Student_delete_update.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_17\Student_delete_update\Student_delete_update\obj\Debug\Student_delete_update.csproj.AssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_17\Student_delete_update\Student_delete_update\obj\Debug\Student_delete_update.Form1.resources
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_17\Student_delete_update\Student_delete_update\obj\Debug\Student_delete_update.Properties.Resources.resources
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_17\Student_delete_update\Student_delete_update\obj\Debug\Student_delete_update.csproj.GenerateResource.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_17\Student_delete_update\Student_delete_update\obj\Debug\Student_delete_update.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_17\Student_delete_update\Student_delete_update\obj\Debug\Student_delete_update.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_17\Student_delete_update\Student_delete_update\obj\Debug\Student_delete_update.pdb
