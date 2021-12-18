@@ -1,0 +1,11 @@
+C:\Users\fuadm\source\repos\student_with_picture\student_with_picture\bin\Debug\student_with_picture.exe.config
+C:\Users\fuadm\source\repos\student_with_picture\student_with_picture\bin\Debug\student_with_picture.exe
+C:\Users\fuadm\source\repos\student_with_picture\student_with_picture\bin\Debug\student_with_picture.pdb
+C:\Users\fuadm\source\repos\student_with_picture\student_with_picture\obj\Debug\student_with_picture.csproj.AssemblyReference.cache
+C:\Users\fuadm\source\repos\student_with_picture\student_with_picture\obj\Debug\student_with_picture.Form1.resources
+C:\Users\fuadm\source\repos\student_with_picture\student_with_picture\obj\Debug\student_with_picture.Properties.Resources.resources
+C:\Users\fuadm\source\repos\student_with_picture\student_with_picture\obj\Debug\student_with_picture.csproj.GenerateResource.cache
+C:\Users\fuadm\source\repos\student_with_picture\student_with_picture\obj\Debug\student_with_picture.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\source\repos\student_with_picture\student_with_picture\obj\Debug\student_with_picture.exe
+C:\Users\fuadm\source\repos\student_with_picture\student_with_picture\obj\Debug\student_with_picture.pdb
+C:\Users\fuadm\source\repos\student_with_picture\student_with_picture\obj\Debug\student_with_picture.StudentList.resources
