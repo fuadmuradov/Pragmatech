@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ParfumsModelStoreContainer" CdmEntityContainer="ParfumsEntities">
+    <EntitySetMapping Name="Brands">
+      <EntityTypeMapping TypeName="ParfumsModel.Brand">
+        <MappingFragment StoreEntitySet="Brand">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="ParfumsModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="ParfumsModel.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Whatsapp" ColumnName="Whatsapp" />
+          <ScalarProperty Name="Instagram" ColumnName="Instagram" />
+          <ScalarProperty Name="Facebook" ColumnName="Facebook" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parfums">
+      <EntityTypeMapping TypeName="ParfumsModel.Parfum">
+        <MappingFragment StoreEntitySet="Parfum">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="category_id" ColumnName="category_id" />
+          <ScalarProperty Name="brand_id" ColumnName="brand_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales">
+      <EntityTypeMapping TypeName="ParfumsModel.Sale">
+        <MappingFragment StoreEntitySet="Sales">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="parfum_id" ColumnName="parfum_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParfumInfoes">
+      <EntityTypeMapping TypeName="ParfumsModel.ParfumInfo">
+        <MappingFragment StoreEntitySet="ParfumInfo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesInfoes">
+      <EntityTypeMapping TypeName="ParfumsModel.SalesInfo">
+        <MappingFragment StoreEntitySet="SalesInfo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="S_Count" ColumnName="S_Count" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="BetweenSalesInfo" FunctionName="ParfumsModel.Store.BetweenSalesInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ParfumsModel.BetweenSalesInfo_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="S_Count" ColumnName="S_Count" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="insert_brend" FunctionName="ParfumsModel.Store.insert_brend" />
+    <FunctionImportMapping FunctionImportName="insert_category" FunctionName="ParfumsModel.Store.insert_category" />
+    <FunctionImportMapping FunctionImportName="insert_parfum" FunctionName="ParfumsModel.Store.insert_parfum" />
+    <FunctionImportMapping FunctionImportName="SearchSalesInfo" FunctionName="ParfumsModel.Store.SearchSalesInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ParfumsModel.SearchSalesInfo_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="S_Count" ColumnName="S_Count" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

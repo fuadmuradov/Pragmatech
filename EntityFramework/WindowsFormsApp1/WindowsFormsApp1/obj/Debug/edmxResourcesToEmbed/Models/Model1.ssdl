@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ParfumsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Brand">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Telefon" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="Whatsapp" Type="nvarchar" MaxLength="50" />
+    <Property Name="Instagram" Type="nvarchar" MaxLength="50" />
+    <Property Name="Facebook" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Parfum">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Price" Type="int" />
+    <Property Name="Comment" Type="nvarchar" MaxLength="500" />
+    <Property Name="category_id" Type="int" />
+    <Property Name="brand_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Sales">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Amount" Type="int" Nullable="false" />
+    <Property Name="parfum_id" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Parfums.dbo.ParfumInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ParfumInfo">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Brand" />
+      <PropertyRef Name="Category" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Price" Type="int" />
+    <Property Name="Brand" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Category" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Parfums.dbo.SalesInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SalesInfo">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="S_Count" />
+      <PropertyRef Name="Brand" />
+      <PropertyRef Name="Category" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="S_Count" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Brand" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Category" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Price" Type="int" />
+  </EntityType>
+  <Association Name="FK__Parfum__brand_id__15502E78">
+    <End Role="Brand" Type="Self.Brand" Multiplicity="0..1" />
+    <End Role="Parfum" Type="Self.Parfum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Brand">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Parfum">
+        <PropertyRef Name="brand_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Parfum__category__145C0A3F">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="Parfum" Type="Self.Parfum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Parfum">
+        <PropertyRef Name="category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sales__parfum_id__182C9B23">
+    <End Role="Parfum" Type="Self.Parfum" Multiplicity="0..1" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Parfum">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="parfum_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="BetweenSalesInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LowNumber" Type="int" Mode="In" />
+    <Parameter Name="HighNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="insert_brend" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="insert_category" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="insert_parfum" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Price" Type="int" Mode="In" />
+    <Parameter Name="Comment" Type="nvarchar" Mode="In" />
+    <Parameter Name="cat_id" Type="int" Mode="In" />
+    <Parameter Name="bra_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SearchSalesInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SearchText" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="LowNumber" Type="int" Mode="In" />
+    <Parameter Name="HighNumber" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="ParfumsModelStoreContainer">
+    <EntitySet Name="Brand" EntityType="Self.Brand" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contact" EntityType="Self.Contact" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Parfum" EntityType="Self.Parfum" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sales" EntityType="Self.Sales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParfumInfo" EntityType="Self.ParfumInfo" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ParfumInfo].[id] AS [id], 
+    [ParfumInfo].[Name] AS [Name], 
+    [ParfumInfo].[Price] AS [Price], 
+    [ParfumInfo].[Brand] AS [Brand], 
+    [ParfumInfo].[Category] AS [Category]
+    FROM [dbo].[ParfumInfo] AS [ParfumInfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SalesInfo" EntityType="Self.SalesInfo" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SalesInfo].[id] AS [id], 
+    [SalesInfo].[S_Count] AS [S_Count], 
+    [SalesInfo].[Name] AS [Name], 
+    [SalesInfo].[Brand] AS [Brand], 
+    [SalesInfo].[Category] AS [Category], 
+    [SalesInfo].[Price] AS [Price]
+    FROM [dbo].[SalesInfo] AS [SalesInfo]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Parfum__brand_id__15502E78" Association="Self.FK__Parfum__brand_id__15502E78">
+      <End Role="Brand" EntitySet="Brand" />
+      <End Role="Parfum" EntitySet="Parfum" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Parfum__category__145C0A3F" Association="Self.FK__Parfum__category__145C0A3F">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Parfum" EntitySet="Parfum" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sales__parfum_id__182C9B23" Association="Self.FK__Sales__parfum_id__182C9B23">
+      <End Role="Parfum" EntitySet="Parfum" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

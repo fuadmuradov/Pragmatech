@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ParfumsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Brand">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Contact">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Telefon" Type="nvarchar" MaxLength="50" />
+          <Property Name="Mobile" Type="nvarchar" MaxLength="50" />
+          <Property Name="Whatsapp" Type="nvarchar" MaxLength="50" />
+          <Property Name="Instagram" Type="nvarchar" MaxLength="50" />
+          <Property Name="Facebook" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Parfum">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="Price" Type="int" />
+          <Property Name="Comment" Type="nvarchar" MaxLength="500" />
+          <Property Name="category_id" Type="int" />
+          <Property Name="brand_id" Type="int" />
+        </EntityType>
+        <EntityType Name="Sales">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Amount" Type="int" Nullable="false" />
+          <Property Name="parfum_id" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Parfums.dbo.ParfumInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="ParfumInfo">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="Brand" />
+            <PropertyRef Name="Category" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="Price" Type="int" />
+          <Property Name="Brand" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Category" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Parfums.dbo.SalesInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="SalesInfo">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="S_Count" />
+            <PropertyRef Name="Brand" />
+            <PropertyRef Name="Category" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="S_Count" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="Brand" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Category" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Price" Type="int" />
+        </EntityType>
+        <Association Name="FK__Parfum__brand_id__15502E78">
+          <End Role="Brand" Type="Self.Brand" Multiplicity="0..1" />
+          <End Role="Parfum" Type="Self.Parfum" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Brand">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Parfum">
+              <PropertyRef Name="brand_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Parfum__category__145C0A3F">
+          <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+          <End Role="Parfum" Type="Self.Parfum" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Parfum">
+              <PropertyRef Name="category_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sales__parfum_id__182C9B23">
+          <End Role="Parfum" Type="Self.Parfum" Multiplicity="0..1" />
+          <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Parfum">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Sales">
+              <PropertyRef Name="parfum_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="BetweenSalesInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="LowNumber" Type="int" Mode="In" />
+          <Parameter Name="HighNumber" Type="int" Mode="In" />
+        </Function>
+        <Function Name="insert_brend" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Name" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="insert_category" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Name" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="insert_parfum" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Name" Type="nvarchar" Mode="In" />
+          <Parameter Name="Price" Type="int" Mode="In" />
+          <Parameter Name="Comment" Type="nvarchar" Mode="In" />
+          <Parameter Name="cat_id" Type="int" Mode="In" />
+          <Parameter Name="bra_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SearchSalesInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SearchText" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="LowNumber" Type="int" Mode="In" />
+          <Parameter Name="HighNumber" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="ParfumsModelStoreContainer">
+          <EntitySet Name="Brand" EntityType="Self.Brand" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Contact" EntityType="Self.Contact" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Parfum" EntityType="Self.Parfum" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sales" EntityType="Self.Sales" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ParfumInfo" EntityType="Self.ParfumInfo" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [ParfumInfo].[id] AS [id], 
+    [ParfumInfo].[Name] AS [Name], 
+    [ParfumInfo].[Price] AS [Price], 
+    [ParfumInfo].[Brand] AS [Brand], 
+    [ParfumInfo].[Category] AS [Category]
+    FROM [dbo].[ParfumInfo] AS [ParfumInfo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="SalesInfo" EntityType="Self.SalesInfo" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [SalesInfo].[id] AS [id], 
+    [SalesInfo].[S_Count] AS [S_Count], 
+    [SalesInfo].[Name] AS [Name], 
+    [SalesInfo].[Brand] AS [Brand], 
+    [SalesInfo].[Category] AS [Category], 
+    [SalesInfo].[Price] AS [Price]
+    FROM [dbo].[SalesInfo] AS [SalesInfo]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__Parfum__brand_id__15502E78" Association="Self.FK__Parfum__brand_id__15502E78">
+            <End Role="Brand" EntitySet="Brand" />
+            <End Role="Parfum" EntitySet="Parfum" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Parfum__category__145C0A3F" Association="Self.FK__Parfum__category__145C0A3F">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="Parfum" EntitySet="Parfum" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sales__parfum_id__182C9B23" Association="Self.FK__Sales__parfum_id__182C9B23">
+            <End Role="Parfum" EntitySet="Parfum" />
+            <End Role="Sales" EntitySet="Sales" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ParfumsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Brand">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Parfums" Relationship="Self.FK__Parfum__brand_id__15502E78" FromRole="Brand" ToRole="Parfum" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Parfums" Relationship="Self.FK__Parfum__category__145C0A3F" FromRole="Category" ToRole="Parfum" />
+        </EntityType>
+        <EntityType Name="Contact">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Telefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Whatsapp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Instagram" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Facebook" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Parfum">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Price" Type="Int32" />
+          <Property Name="Comment" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="category_id" Type="Int32" />
+          <Property Name="brand_id" Type="Int32" />
+          <NavigationProperty Name="Brand" Relationship="Self.FK__Parfum__brand_id__15502E78" FromRole="Parfum" ToRole="Brand" />
+          <NavigationProperty Name="Category" Relationship="Self.FK__Parfum__category__145C0A3F" FromRole="Parfum" ToRole="Category" />
+          <NavigationProperty Name="Sales" Relationship="Self.FK__Sales__parfum_id__182C9B23" FromRole="Parfum" ToRole="Sales" />
+        </EntityType>
+        <EntityType Name="Sale">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Amount" Type="Int32" Nullable="false" />
+          <Property Name="parfum_id" Type="Int32" />
+          <NavigationProperty Name="Parfum" Relationship="Self.FK__Sales__parfum_id__182C9B23" FromRole="Sales" ToRole="Parfum" />
+        </EntityType>
+        <EntityType Name="ParfumInfo">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="Brand" />
+            <PropertyRef Name="Category" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Price" Type="Int32" />
+          <Property Name="Brand" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SalesInfo">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="S_Count" />
+            <PropertyRef Name="Brand" />
+            <PropertyRef Name="Category" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="S_Count" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Brand" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Price" Type="Int32" />
+        </EntityType>
+        <Association Name="FK__Parfum__brand_id__15502E78">
+          <End Role="Brand" Type="Self.Brand" Multiplicity="0..1" />
+          <End Role="Parfum" Type="Self.Parfum" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Brand">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Parfum">
+              <PropertyRef Name="brand_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Parfum__category__145C0A3F">
+          <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+          <End Role="Parfum" Type="Self.Parfum" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Parfum">
+              <PropertyRef Name="category_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sales__parfum_id__182C9B23">
+          <End Role="Parfum" Type="Self.Parfum" Multiplicity="0..1" />
+          <End Role="Sales" Type="Self.Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Parfum">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Sales">
+              <PropertyRef Name="parfum_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ParfumsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Brands" EntityType="Self.Brand" />
+          <EntitySet Name="Categories" EntityType="Self.Category" />
+          <EntitySet Name="Contacts" EntityType="Self.Contact" />
+          <EntitySet Name="Parfums" EntityType="Self.Parfum" />
+          <EntitySet Name="Sales" EntityType="Self.Sale" />
+          <EntitySet Name="ParfumInfoes" EntityType="Self.ParfumInfo" />
+          <EntitySet Name="SalesInfoes" EntityType="Self.SalesInfo" />
+          <AssociationSet Name="FK__Parfum__brand_id__15502E78" Association="Self.FK__Parfum__brand_id__15502E78">
+            <End Role="Brand" EntitySet="Brands" />
+            <End Role="Parfum" EntitySet="Parfums" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Parfum__category__145C0A3F" Association="Self.FK__Parfum__category__145C0A3F">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="Parfum" EntitySet="Parfums" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sales__parfum_id__182C9B23" Association="Self.FK__Sales__parfum_id__182C9B23">
+            <End Role="Parfum" EntitySet="Parfums" />
+            <End Role="Sales" EntitySet="Sales" />
+          </AssociationSet>
+          <FunctionImport Name="BetweenSalesInfo" ReturnType="Collection(ParfumsModel.BetweenSalesInfo_Result)">
+            <Parameter Name="LowNumber" Mode="In" Type="Int32" />
+            <Parameter Name="HighNumber" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="insert_brend">
+            <Parameter Name="Name" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="insert_category">
+            <Parameter Name="Name" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="insert_parfum">
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Price" Mode="In" Type="Int32" />
+            <Parameter Name="Comment" Mode="In" Type="String" />
+            <Parameter Name="cat_id" Mode="In" Type="Int32" />
+            <Parameter Name="bra_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SearchSalesInfo" ReturnType="Collection(ParfumsModel.SearchSalesInfo_Result)">
+            <Parameter Name="SearchText" Mode="In" Type="String" />
+            <Parameter Name="LowNumber" Mode="In" Type="Int32" />
+            <Parameter Name="HighNumber" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="BetweenSalesInfo_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Int32" Name="S_Count" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Brand" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Category" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="Price" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SearchSalesInfo_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Int32" Name="S_Count" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Brand" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Category" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="Price" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ParfumsModelStoreContainer" CdmEntityContainer="ParfumsEntities">
+          <EntitySetMapping Name="Brands">
+            <EntityTypeMapping TypeName="ParfumsModel.Brand">
+              <MappingFragment StoreEntitySet="Brand">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="ParfumsModel.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Contacts">
+            <EntityTypeMapping TypeName="ParfumsModel.Contact">
+              <MappingFragment StoreEntitySet="Contact">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Whatsapp" ColumnName="Whatsapp" />
+                <ScalarProperty Name="Instagram" ColumnName="Instagram" />
+                <ScalarProperty Name="Facebook" ColumnName="Facebook" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Parfums">
+            <EntityTypeMapping TypeName="ParfumsModel.Parfum">
+              <MappingFragment StoreEntitySet="Parfum">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="category_id" ColumnName="category_id" />
+                <ScalarProperty Name="brand_id" ColumnName="brand_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sales">
+            <EntityTypeMapping TypeName="ParfumsModel.Sale">
+              <MappingFragment StoreEntitySet="Sales">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="parfum_id" ColumnName="parfum_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ParfumInfoes">
+            <EntityTypeMapping TypeName="ParfumsModel.ParfumInfo">
+              <MappingFragment StoreEntitySet="ParfumInfo">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Brand" ColumnName="Brand" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SalesInfoes">
+            <EntityTypeMapping TypeName="ParfumsModel.SalesInfo">
+              <MappingFragment StoreEntitySet="SalesInfo">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="S_Count" ColumnName="S_Count" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Brand" ColumnName="Brand" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="BetweenSalesInfo" FunctionName="ParfumsModel.Store.BetweenSalesInfo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ParfumsModel.BetweenSalesInfo_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="S_Count" ColumnName="S_Count" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Brand" ColumnName="Brand" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="insert_brend" FunctionName="ParfumsModel.Store.insert_brend" />
+          <FunctionImportMapping FunctionImportName="insert_category" FunctionName="ParfumsModel.Store.insert_category" />
+          <FunctionImportMapping FunctionImportName="insert_parfum" FunctionName="ParfumsModel.Store.insert_parfum" />
+          <FunctionImportMapping FunctionImportName="SearchSalesInfo" FunctionName="ParfumsModel.Store.SearchSalesInfo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ParfumsModel.SearchSalesInfo_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="S_Count" ColumnName="S_Count" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Brand" ColumnName="Brand" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

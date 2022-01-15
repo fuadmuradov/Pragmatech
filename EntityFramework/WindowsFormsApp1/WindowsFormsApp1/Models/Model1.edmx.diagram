@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2d9840f4b3a449a4bcb4a634732b5c81" Name="Diagram1">
+        <EntityTypeShape EntityType="ParfumsModel.Brand" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumsModel.Category" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumsModel.Contact" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumsModel.Parfum" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumsModel.Sale" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumsModel.ParfumInfo" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumsModel.SalesInfo" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="ParfumsModel.FK__Parfum__brand_id__15502E78" ManuallyRouted="false" />
+        <AssociationConnector Association="ParfumsModel.FK__Parfum__category__145C0A3F" ManuallyRouted="false" />
+        <AssociationConnector Association="ParfumsModel.FK__Sales__parfum_id__182C9B23" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
