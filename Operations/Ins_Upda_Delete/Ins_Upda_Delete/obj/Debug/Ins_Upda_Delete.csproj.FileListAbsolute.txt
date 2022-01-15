@@ -1,0 +1,10 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_25\INS_UPD_DEL\Ins_Upda_Delete\Ins_Upda_Delete\bin\Debug\Ins_Upda_Delete.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_25\INS_UPD_DEL\Ins_Upda_Delete\Ins_Upda_Delete\bin\Debug\Ins_Upda_Delete.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_25\INS_UPD_DEL\Ins_Upda_Delete\Ins_Upda_Delete\bin\Debug\Ins_Upda_Delete.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_25\INS_UPD_DEL\Ins_Upda_Delete\Ins_Upda_Delete\obj\Debug\Ins_Upda_Delete.csproj.AssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_25\INS_UPD_DEL\Ins_Upda_Delete\Ins_Upda_Delete\obj\Debug\Ins_Upda_Delete.Form1.resources
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_25\INS_UPD_DEL\Ins_Upda_Delete\Ins_Upda_Delete\obj\Debug\Ins_Upda_Delete.Properties.Resources.resources
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_25\INS_UPD_DEL\Ins_Upda_Delete\Ins_Upda_Delete\obj\Debug\Ins_Upda_Delete.csproj.GenerateResource.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_25\INS_UPD_DEL\Ins_Upda_Delete\Ins_Upda_Delete\obj\Debug\Ins_Upda_Delete.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_25\INS_UPD_DEL\Ins_Upda_Delete\Ins_Upda_Delete\obj\Debug\Ins_Upda_Delete.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Lesson_25\INS_UPD_DEL\Ins_Upda_Delete\Ins_Upda_Delete\obj\Debug\Ins_Upda_Delete.pdb
