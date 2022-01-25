@@ -1,0 +1,7 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Asynchornous\Asynchornous\bin\Debug\Asynchornous.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Asynchornous\Asynchornous\bin\Debug\Asynchornous.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Asynchornous\Asynchornous\bin\Debug\Asynchornous.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Asynchornous\Asynchornous\obj\Debug\Asynchornous.csproj.AssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Asynchornous\Asynchornous\obj\Debug\Asynchornous.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Asynchornous\Asynchornous\obj\Debug\Asynchornous.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Asynchornous\Asynchornous\obj\Debug\Asynchornous.pdb
