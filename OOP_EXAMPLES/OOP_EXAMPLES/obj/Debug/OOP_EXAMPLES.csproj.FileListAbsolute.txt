@@ -1,0 +1,7 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\OOP_EXAMPLES\OOP_EXAMPLES\bin\Debug\OOP_EXAMPLES.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\OOP_EXAMPLES\OOP_EXAMPLES\bin\Debug\OOP_EXAMPLES.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\OOP_EXAMPLES\OOP_EXAMPLES\bin\Debug\OOP_EXAMPLES.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\OOP_EXAMPLES\OOP_EXAMPLES\obj\Debug\OOP_EXAMPLES.csproj.AssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\OOP_EXAMPLES\OOP_EXAMPLES\obj\Debug\OOP_EXAMPLES.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\OOP_EXAMPLES\OOP_EXAMPLES\obj\Debug\OOP_EXAMPLES.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\OOP_EXAMPLES\OOP_EXAMPLES\obj\Debug\OOP_EXAMPLES.pdb
