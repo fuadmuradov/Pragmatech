@@ -1,0 +1,7 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Pharmacy2\Pharmacy2\bin\Debug\Pharmacy2.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Pharmacy2\Pharmacy2\bin\Debug\Pharmacy2.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Pharmacy2\Pharmacy2\bin\Debug\Pharmacy2.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Pharmacy2\Pharmacy2\obj\Debug\Pharmacy2.csproj.AssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Pharmacy2\Pharmacy2\obj\Debug\Pharmacy2.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Pharmacy2\Pharmacy2\obj\Debug\Pharmacy2.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\Pharmacy2\Pharmacy2\obj\Debug\Pharmacy2.pdb
