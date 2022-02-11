@@ -1,0 +1,11 @@
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\exam\GuessWhat\GuessWhat\bin\Debug\GuessWhat.exe.config
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\exam\GuessWhat\GuessWhat\bin\Debug\GuessWhat.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\exam\GuessWhat\GuessWhat\bin\Debug\GuessWhat.pdb
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\exam\GuessWhat\GuessWhat\obj\Debug\GuessWhat.csproj.AssemblyReference.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\exam\GuessWhat\GuessWhat\obj\Debug\GuessWhat.Form1.resources
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\exam\GuessWhat\GuessWhat\obj\Debug\GuessWhat.Form2.resources
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\exam\GuessWhat\GuessWhat\obj\Debug\GuessWhat.Properties.Resources.resources
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\exam\GuessWhat\GuessWhat\obj\Debug\GuessWhat.csproj.GenerateResource.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\exam\GuessWhat\GuessWhat\obj\Debug\GuessWhat.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\exam\GuessWhat\GuessWhat\obj\Debug\GuessWhat.exe
+C:\Users\fuadm\OneDrive\Desktop\Pragmatech\exam\GuessWhat\GuessWhat\obj\Debug\GuessWhat.pdb
