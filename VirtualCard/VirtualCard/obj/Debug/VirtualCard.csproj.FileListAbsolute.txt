@@ -1,0 +1,12 @@
+C:\Users\fuadm\source\repos\VirtualCard\VirtualCard\bin\Debug\VirtualCard.exe.config
+C:\Users\fuadm\source\repos\VirtualCard\VirtualCard\bin\Debug\VirtualCard.exe
+C:\Users\fuadm\source\repos\VirtualCard\VirtualCard\bin\Debug\VirtualCard.pdb
+C:\Users\fuadm\source\repos\VirtualCard\VirtualCard\obj\Debug\VirtualCard.csproj.AssemblyReference.cache
+C:\Users\fuadm\source\repos\VirtualCard\VirtualCard\obj\Debug\VirtualCard.Delete.resources
+C:\Users\fuadm\source\repos\VirtualCard\VirtualCard\obj\Debug\VirtualCard.Form1.resources
+C:\Users\fuadm\source\repos\VirtualCard\VirtualCard\obj\Debug\VirtualCard.Form2.resources
+C:\Users\fuadm\source\repos\VirtualCard\VirtualCard\obj\Debug\VirtualCard.Properties.Resources.resources
+C:\Users\fuadm\source\repos\VirtualCard\VirtualCard\obj\Debug\VirtualCard.csproj.GenerateResource.cache
+C:\Users\fuadm\source\repos\VirtualCard\VirtualCard\obj\Debug\VirtualCard.csproj.CoreCompileInputs.cache
+C:\Users\fuadm\source\repos\VirtualCard\VirtualCard\obj\Debug\VirtualCard.exe
+C:\Users\fuadm\source\repos\VirtualCard\VirtualCard\obj\Debug\VirtualCard.pdb
